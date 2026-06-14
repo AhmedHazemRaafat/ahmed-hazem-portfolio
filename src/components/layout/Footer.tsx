@@ -1,5 +1,7 @@
 import { Github, Heart, Linkedin, Mail } from "lucide-react";
 
+import { contactInfo } from "@/data/contact";
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -23,17 +25,17 @@ export function Footer() {
         <div className="flex items-center gap-3">
           {[
             {
-              href: "https://github.com/ahmedhazem",
+              href: contactInfo.githubUrl,
               label: "GitHub",
               icon: Github,
             },
             {
-              href: "https://linkedin.com/in/ahmedhazem",
+              href: contactInfo.linkedinUrl,
               label: "LinkedIn",
               icon: Linkedin,
             },
             {
-              href: "mailto:ahmed.hazem@example.com",
+              href: `mailto:${contactInfo.email}`,
               label: "Email",
               icon: Mail,
             },

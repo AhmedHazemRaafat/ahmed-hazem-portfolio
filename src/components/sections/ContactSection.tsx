@@ -5,25 +5,26 @@ import { motion } from "framer-motion";
 
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Button } from "@/components/ui/button";
+import { contactInfo, contactInfoDisplay } from "@/data/contact";
 
 const contactLinks = [
   {
     icon: Mail,
     label: "Email",
-    value: "ahmed.hazem@example.com",
-    href: "mailto:ahmed.hazem@example.com",
+    value: contactInfoDisplay.email,
+    href: `mailto:${contactInfo.email}`,
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/ahmedhazem",
-    href: "https://github.com/ahmedhazem",
+    value: contactInfoDisplay.github,
+    href: contactInfo.githubUrl,
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/ahmedhazem",
-    href: "https://linkedin.com/in/ahmedhazem",
+    value: contactInfoDisplay.linkedin,
+    href: contactInfo.linkedinUrl,
   },
   {
     icon: MapPin,
@@ -108,7 +109,7 @@ export function ContactSection() {
               size="lg"
               className="mt-8 w-full shadow-lg shadow-primary/20"
             >
-              <a href="mailto:ahmed.hazem@example.com">
+              <a href={`mailto:${contactInfo.email}`}>
                 <Send />
                 Send an Email
               </a>
