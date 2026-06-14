@@ -15,7 +15,7 @@ export function ProjectsSection() {
         <SectionHeading
           eyebrow="Portfolio"
           title="Featured Projects"
-          subtitle="Ten tools built to solve real problems — each deployed as its own application."
+          subtitle="Five production apps deployed on Vercel — each solving a real problem with a full-stack implementation."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

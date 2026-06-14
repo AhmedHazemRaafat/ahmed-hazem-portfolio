@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const stats = [
-  { value: "10+", label: "Projects Built" },
+  { value: "5", label: "Live Projects" },
   { value: "3+", label: "Years Experience" },
   { value: "Full-Stack", label: "Engineering" },
 ];

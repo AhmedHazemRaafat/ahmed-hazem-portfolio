@@ -57,8 +57,15 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           <CardTitle className="font-display text-lg transition-colors duration-300 group-hover:text-primary">
             {project.name}
           </CardTitle>
-          <CardDescription className="line-clamp-2 leading-relaxed">
-            {project.description}
+          <CardDescription className="space-y-2 leading-relaxed">
+            <span className="block text-xs font-medium uppercase tracking-wide text-primary/80">
+              Problem
+            </span>
+            <span className="block line-clamp-2">{project.problem}</span>
+            <span className="block pt-1 text-xs font-medium uppercase tracking-wide text-primary/80">
+              Highlights
+            </span>
+            <span className="block line-clamp-3">{project.description}</span>
           </CardDescription>
         </CardHeader>
         <CardContent>

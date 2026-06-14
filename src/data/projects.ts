@@ -2,93 +2,99 @@ import type { Project } from "@/types/portfolio";
 
 export const projects: Project[] = [
   {
-    id: "unipath",
-    name: "UniPath",
+    id: "ecommerce-analytics-pipeline",
+    name: "E-commerce Analytics Pipeline",
+    problem:
+      "E-commerce teams need reliable revenue and product insights without standing up an expensive cloud warehouse.",
     description:
-      "Academic pathway planner helping students map courses, prerequisites, and graduation timelines with clarity.",
-    techStack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
-    liveUrl: "https://unipath.example.com",
-    githubUrl: "https://github.com/ahmedhazem/unipath",
+      "A production-grade analytics stack — simulated exports through n8n scheduling, Python ETL with retry logic, DuckDB + dbt transforms, and a live Next.js BI dashboard with cohort heatmaps, geo choropleths, and automated revenue-drop alerts.",
+    techStack: [
+      "Python",
+      "DuckDB",
+      "dbt",
+      "n8n",
+      "Next.js",
+      "Railway",
+      "Recharts",
+    ],
+    liveUrl: "https://ecommerce-analytics-pipeline-theta.vercel.app/",
+    githubUrl: "https://github.com/AhmedHazemRaafat/ecommerce-analytics-pipeline",
   },
   {
-    id: "atsight",
-    name: "ATSight",
+    id: "job-application-tracker",
+    name: "JobTrack",
+    problem:
+      "Job seekers lose applications, follow-ups, and pipeline visibility when tracking everything in spreadsheets.",
     description:
-      "Resume analyzer that scores ATS compatibility and suggests actionable improvements for job applications.",
-    techStack: ["React", "Python", "FastAPI", "NLP"],
-    liveUrl: "https://atsight.example.com",
-    githubUrl: "https://github.com/ahmedhazem/atsight",
+      "A smart application tracker with drag-and-drop Kanban across seven stages, rich analytics (response rates, salary distribution, stage timing), CSV import/export with column mapping, and daily follow-up email reminders via Vercel Cron.",
+    techStack: [
+      "Next.js",
+      "PostgreSQL",
+      "Prisma",
+      "NextAuth",
+      "@dnd-kit",
+      "Recharts",
+      "Resend",
+    ],
+    liveUrl: "https://job-application-tracker-seven-tan.vercel.app/",
+    githubUrl: "https://github.com/AhmedHazemRaafat/job-application-tracker",
   },
   {
-    id: "docuready",
-    name: "DocuReady",
+    id: "ai-document-qa",
+    name: "DocuMind",
+    problem:
+      "Finding accurate answers buried in long PDF documents is slow, manual, and error-prone.",
     description:
-      "Document preparation assistant for visa and university applications with checklists and smart reminders.",
-    techStack: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-    liveUrl: "https://docuready.example.com",
-    githubUrl: "https://github.com/ahmedhazem/docuready",
+      "Production-ready RAG: upload PDFs, chunk and embed with OpenAI, store vectors in pgvector on Neon, then chat with streaming answers and page-level source citations — guarded by a similarity threshold so the AI never hallucinates beyond the document.",
+    techStack: [
+      "Next.js",
+      "OpenAI",
+      "pgvector",
+      "Neon",
+      "Vercel Blob",
+      "AI SDK",
+      "Prisma",
+    ],
+    liveUrl: "https://ai-document-qa-psi.vercel.app/",
+    githubUrl: "https://github.com/AhmedHazemRaafat/ai-document-qa",
   },
   {
-    id: "internflow",
-    name: "InternFlow",
+    id: "realtime-collaborative-workspace",
+    name: "CollabSpace",
+    problem:
+      "Teams need Google Docs–level real-time collaboration with full control over their stack and data.",
     description:
-      "Internship tracking platform for managing applications, interviews, and follow-ups in one dashboard.",
-    techStack: ["React", "Node.js", "MongoDB", "Express"],
-    liveUrl: "https://internflow.example.com",
-    githubUrl: "https://github.com/ahmedhazem/internflow",
+      "A collaborative document editor powered by Yjs CRDTs for conflict-free merging, live cursors and presence, threaded comments, auto version snapshots every five minutes, workspace roles, email invitations, and Markdown/PDF export — with a dedicated WebSocket server on Railway.",
+    techStack: [
+      "Next.js",
+      "Tiptap",
+      "Yjs",
+      "WebSockets",
+      "PostgreSQL",
+      "Prisma",
+      "NextAuth",
+    ],
+    liveUrl: "https://realtime-collaborative-workspace.vercel.app/",
+    githubUrl:
+      "https://github.com/AhmedHazemRaafat/realtime_collaborative_workspace",
   },
   {
-    id: "gitpulse",
-    name: "GitPulse",
+    id: "saas-billing-dashboard",
+    name: "SaaS Billing Dashboard",
+    problem:
+      "SaaS founders need multi-tenant billing, plan limits, and subscription management without rebuilding Stripe integration from scratch.",
     description:
-      "Developer activity dashboard visualizing commit patterns, contribution streaks, and repository health.",
-    techStack: ["Next.js", "GitHub API", "Chart.js", "TypeScript"],
-    liveUrl: "https://gitpulse.example.com",
-    githubUrl: "https://github.com/ahmedhazem/gitpulse",
-  },
-  {
-    id: "budgetbridge",
-    name: "BudgetBridge",
-    description:
-      "Personal finance tool for students relocating abroad, with multi-currency budgeting and expense insights.",
-    techStack: ["React", "TypeScript", "Firebase", "Recharts"],
-    liveUrl: "https://budgetbridge.example.com",
-    githubUrl: "https://github.com/ahmedhazem/budgetbridge",
-  },
-  {
-    id: "mailcraft-ai",
-    name: "MailCraft AI",
-    description:
-      "AI-assisted email composer for professional outreach, follow-ups, and application correspondence.",
-    techStack: ["Next.js", "OpenAI API", "TypeScript", "shadcn/ui"],
-    liveUrl: "https://mailcraft-ai.example.com",
-    githubUrl: "https://github.com/ahmedhazem/mailcraft-ai",
-  },
-  {
-    id: "skillmap",
-    name: "SkillMap",
-    description:
-      "Interactive skill graph that maps learning paths, dependencies, and progress toward career goals.",
-    techStack: ["React", "D3.js", "TypeScript", "Tailwind"],
-    liveUrl: "https://skillmap.example.com",
-    githubUrl: "https://github.com/ahmedhazem/skillmap",
-  },
-  {
-    id: "habitlab",
-    name: "HabitLab",
-    description:
-      "Habit-building lab with streak tracking, micro-goals, and data-driven reflection for consistent growth.",
-    techStack: ["Next.js", "TypeScript", "SQLite", "Prisma"],
-    liveUrl: "https://habitlab.example.com",
-    githubUrl: "https://github.com/ahmedhazem/habitlab",
-  },
-  {
-    id: "decisionlab",
-    name: "DecisionLab",
-    description:
-      "Structured decision-making framework with weighted criteria, scenarios, and outcome journaling.",
-    techStack: ["React", "TypeScript", "Zustand", "Tailwind"],
-    liveUrl: "https://decisionlab.example.com",
-    githubUrl: "https://github.com/ahmedhazem/decisionlab",
+      "A full multi-tenant billing platform with Free/Pro/Enterprise Stripe subscriptions, usage tracking with plan enforcement, customer billing portal, admin MRR/churn analytics, transactional emails, and GDPR data export and deletion — all scoped per organization.",
+    techStack: [
+      "Next.js",
+      "Stripe",
+      "PostgreSQL",
+      "Prisma",
+      "NextAuth",
+      "Recharts",
+      "Resend",
+    ],
+    liveUrl: "https://saas-billing-dashboard-omega.vercel.app/",
+    githubUrl: "https://github.com/AhmedHazemRaafat/saas-billing-dashboard",
   },
 ];

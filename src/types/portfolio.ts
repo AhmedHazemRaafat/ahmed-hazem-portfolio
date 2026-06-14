@@ -1,6 +1,7 @@
 export interface Project {
   id: string;
   name: string;
+  problem: string;
   description: string;
   techStack: string[];
   liveUrl: string;

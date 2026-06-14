@@ -67,9 +67,9 @@ export function AboutSection() {
               practical, problem-first approach.
             </p>
             <p className="text-base leading-relaxed text-muted-foreground/90">
-              This portfolio showcases the projects I&apos;ve built — each
-              addressing a real need, from academic planning to professional
-              productivity.
+              This portfolio showcases five production apps I&apos;ve built and
+              deployed — from data pipelines and AI document Q&A to
+              real-time collaboration and SaaS billing.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-2">
